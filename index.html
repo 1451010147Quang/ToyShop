@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <header class="header" id="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="img/b1.jpg">
+              <div class="header-middle">
+                <h1>Pick The Best Toy For<br> Your Kid</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                <a href="shopnow.html">READ MORE</a>
+              </div>
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/b2.jpg">
+              <div class="header-middle">
+                <h1>Sort Toys And Teddy bears<br> For Kids</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                <a href="shopnow.html">READ MORE</a>
+              </div>
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="img/b3.jpg">
+              <div class="header-middle">
+                <h1>Best Toys And Dolls<br> For Kids</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                <a href="shopnow.html">READ MORE</a>
+              </div>
+            </div>
+          
+             <a class="prev" onclick="clickprev()">&#10094;</a>
+            <a class="next" onclick="clicknext()">&#10095;</a>
+
+        
+        <div class="header-bar">
+              <div class="header-info">
+                  <p><i class="fa fa-volume-control-phone"></i> +(000)123 4565 32</p>
+                  <p><i class="fa fa-envelope"></i><a href="mailto:info@example1.com"> info@example1.com </a></p>
+              </div>
+              <div class="header-search">
+                  <h1><a href="index.html">Toys-Shop</a></h1>
+                  <form action="#" method="get" class="header-form">
+                      <input type="text" name="" id="header-input" placeholder="Search">
+                      <button class="btn-search">Search</button>
+                  </form>
+                  <div class="header-icon">
+                    <span><i class="fa fa-heart-o"></i></span>
+                    <span onclick="document.getElementById('loginform').style.display='block'"><i class="fa fa-user-o"></i></span>
+                    <span><i class="fa fa-cart-arrow-down"></i></span>
+                  </div>
+              </div>
+              <div  class="header-navbar">
+                  <span class="fa fa-bars" id="menu-head" onclick="clickMenu()"></span>
+                  <ul id="menu-ul" class="menu-an">
+                      <li><a href="" id="active">HOME</a></li>
+                      <li><a href="">ABOUT</a></li>
+                      <li><a href="">SERVICE</a></li>
+                      <li><a href="shopnow.html">SHOP NOW</a></li>
+                      <li><a  onclick="clickPage()">PAGE <i class="fa fa-caret-down"></i></a>
+                            <ul id="nav-page" class="nav-item">
+                                <li><a href="">404 PAGE</a></li>
+                                <li><a href="">TYPOGRAPHY</a></li>
+                            </ul>
+                      </li>
+                      <li><a  onclick="clickProduct()">PRODUCT <i class="fa fa-caret-down"></i></a>
+                        <ul id="nav-product" class="nav-item">
+                            <li><a href="">KIDS TOYS</a></li>
+                            <li><a href="">DOLLS</a></li>
+                            <li><a href="">KEYS TOYS</a></li>
+                            <li><a href="">BOYS TOYS</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="">CONTACT</a></li>
+                  </ul>                      
+              </div>
+        </div>
+    </div>
+    </header>
+
+    
+
+    <section class="product">
+        <div class="product-container">
+            <h1>Best Products</h1>
+            <div class="product-row">
+                <div class="product-col">
+                    <img src="img/a1.jpg" alt="">
+                    <h2>Baby Toys</h2>
+                </div>
+                <div class="product-col">
+                    <img src="img/a2.jpg" alt="">
+                    <h2>Lite Brite</h2>
+                </div>
+                <div class="product-col">
+                    <img src="img/a3.jpg" alt="">
+                    <h2>Key Toys</h2>
+                </div>
+                <div class="product-col">
+                    <img src="img/a4.jpg" alt="">
+                    <h2>Play Toys</h2>
+                </div>
+                <div class="product-col">
+                    <img src="img/a5.jpg" alt="">
+                    <h2>Gift Toys</h2>
+                </div>
+                <div class="product-col">
+                    <img src="img/a6.jpg" alt="">
+                    <h2>Soft Toys</h2>
+                </div>
+
+                <div class="product-middle">
+                    <h1>GET UP TO <span>70% OFF</span> ON SELECTED<br> TOYS</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="arrival">
+        <h1>New Arrivals</h1>
+        <div class="arrival-container">
+            <div class="arrival-slides arrival-row"> 
+                <div class="arrival-col">
+                    <img src="img/a1.jpg" alt="">
+                    <h2>Soft Toys</h2>
+                    <a href="shopnow.html">SHOP NOW</a>    
+                </div>          
+                <div class="arrival-col">
+                    <img src="img/a2.jpg" alt="">
+                        <h2>Soft Toys</h2>
+                        <a href="shopnow.html">SHOP NOW</a>    
+                </div> 
+                <div class="arrival-col">
+                    <img src="img/a3.jpg" alt="">
+                    <h2>Soft Toys</h2>
+                    <a href="shopnow.html">SHOP NOW</a>    
+                </div>  
+            </div>  
+            <div class="arrival-slides arrival-row">           
+                <div class="arrival-col">
+                    <img src="img/a4.jpg" alt="">              
+                    <h2>Soft Toys</h2>
+                    <a href="shopnow.html">SHOP NOW</a>   
+                </div> 
+                <div class="arrival-col">
+                    <img src="img/a5.jpg" alt="">                 
+                    <h2>Soft Toys</h2>
+                    <a href="shopnow.html">SHOP NOW</a>   
+                </div> 
+                <div class="arrival-col">
+                    <img src="img/a6.jpg" alt="">
+                    <h2>Soft Toys</h2>
+                    <a href="shopnow.html">SHOP NOW</a>    
+                </div> 
+            </div>  
+        </div>   
+        
+    </section>
+
+    <section class="customer">
+        <h1>Customers Review</h1>
+        <div class="cus-slides customer-row">
+            <div class="customer-col">
+                <div class="customer-head">
+                    <img src="img/t1.jpg" alt="">
+                    <div>
+                        <h2>Milky Deo</h2>
+                        <p>Duis posuere</p>
+                    </div>
+                </div>
+                <img src="img/tt1.jpg" alt="">
+                <p><i class="fa fa-quote-left"></i>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere <i class="fa fa-quote-right"></i></p>
+            </div>
+            <div class="customer-col">
+                <div class="customer-head">
+                    <img src="img/t3.jpg" alt="">
+                    <div>
+                        <h2>Sam Deo</h2>
+                        <p>Duis posuere</p>
+                    </div>
+                </div>
+                <img src="img/tt1.jpg" alt="">
+                <p><i class="fa fa-quote-left"></i>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere <i class="fa fa-quote-right"></i></p>
+            </div>
+        </div>
+        <div class="cus-slides customer-row">
+            <div class="customer-col">
+                <div class="customer-head">
+                    <img src="img/t2.jpg" alt="">
+                    <div>
+                        <h2>Milky Deo</h2>
+                        <p>Duis posuere</p>
+                    </div>
+                </div>
+                <img src="img/tt2.jpg" alt="">
+                <p><i class="fa fa-quote-left"></i>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere <i class="fa fa-quote-right"></i></p>
+            </div>
+            <div class="customer-col">
+                <div class="customer-head">
+                    <img src="img/t1.jpg" alt="">
+                    <div>
+                        <h2>Sam Deo</h2>
+                        <p>Duis posuere</p>
+                    </div>
+                </div>
+                <img src="img/tt2.jpg" alt="">
+                <p><i class="fa fa-quote-left"></i>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere <i class="fa fa-quote-right"></i></p>
+            </div>
+        </div>
+
+        <a class="customer-prev" onclick="autoprev()">&#10094;</a>
+        <a class="customer-next" onclick="autocus()">&#10095;</a>
+    </section>
+
+    <section class="latest">
+        <h1>Latest Toys</h1>
+        <div class="latest-first">
+            <img src="img/cc1.jpg" alt="">
+            <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere</p>
+            <a href="shopnow.html">SHOP NOW</a>
+        </div>
+        <div class="latest-row">
+            <div class="latest-col latest-info">
+                <img src="img/cc2.jpg" alt=""">
+                <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere</p>
+                <a href="shopnow.html">SHOP NOW</a>
+            </div>
+            <div class="latest-col ">
+                <div>
+                    <img src="img/tt1.jpg" alt="" style="width: 100%;">
+                    <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere</p>
+                    <a href="shopnow.html">SHOP NOW</a>
+                </div>
+                <div>
+                    <img src="img/cc1.jpg" alt="" style="width: 100%;">
+                    <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere</p>
+                    <a href="shopnow.html">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="premium">
+        <div class="premium-container">
+            <h1>Premium Toys</h1>
+            <div class="premium-row">
+                <div class="premium-col">
+                    <img src="img/pp1.png" alt="">
+                </div>
+                <div class="premium-col ">
+                    <div class="premium-col-right">
+                        <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere</p>
+                        <a href="shopnow.html">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="premium-row">
+                <div class="premium-col ">
+                    <div class="premium-col-right">
+                        <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere</p>
+                        <a href="shopnow.html">SHOP NOW</a>
+                    </div>
+                </div>
+                <div class="premium-col">
+                    <img src="img/pp1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-container">
+            <h1>About Toys</h1>
+            <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere</p>
+            <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere</p>
+            <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere</p>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="map-row">
+            <div class="map-col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d27803.752092988245!2d-94.61741380706275!3d39.09984952549091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87c0f75eafe99997%3A0x558525e66aaa51a2!2zVGjDoG5oIHBo4buRIEthbnNhcywgTWlzc291cmksIEhvYSBL4buz!3m2!1d39.099726499999996!2d-94.5785667!5e0!3m2!1svi!2s!4v1604559245857!5m2!1svi!2s" width="100%" height="416.8px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="map-col map-info">
+                <div>
+                    <i class="fa fa-map-o"></i>
+                    <p>25478 Road St.121</p>
+                    <p>USA New Hill</p>
+                </div>
+                <div>
+                    <i class="fa fa-volume-control-phone"></i>
+                    <p>+(000)123 4565</p>
+                    <p>+(010)123 4565</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <p>info@example1.com</p>
+                    <p>info@example2.com</p>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="getTouch">
+        <div class="get-container">
+            <h1>Get In Touch Us</h1>
+            <div class="get-row">
+                <div class="get-col">
+                    <a href=""><i class="fa fa-facebook-f"></i></a>
+                
+                    <a href=""> <i class="fa fa-envelope"></i></a>
+                
+                    <a href=""><i class="fa fa-rss"></i></a>
+                
+                    <a href=""><i class="fa fa-vk"></i></a>
+                </div>
+            </div>
+            <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere</p>
+            <form action="#" method="get">
+                <input type="text" name="" id="getEmail" placeholder="Email">
+                <div><button class="subcribe">SUBSCRIBE</button></div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2018 Toys-Shop. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">W3Layouts</a></p>
+    </footer>
+
+    <div class="toTop">
+        <a href="#home" class="move"><img src="img/arr.png" alt=""></a>
+    </div>
+
+    
+        <div id="loginform">
+            <div class="login">
+                <div class="login-head">
+                    <h5>Login</h5>
+                    <span onclick="document.getElementById('loginform').style.display='none'">x</span>
+                </div>
+                <div class="login-middle">
+                    <form action="#" method="get">
+                        <input type="text" name="" id="" placeholder="Your Name" required>
+                        <input type="email" name="" id="" placeholder="Your Email" required>
+                        <input type="password" name="" id="" placeholder="Your Password" required>
+                        <button class="signupbtn">LOGIN</button>
+                    </form>
+                </div>
+                <div class="login-foot">
+                    <button onclick="document.getElementById('loginform').style.display='none'">Close</button>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- slide + autoplay -->
+    <script>
+        let slideshead = document.getElementsByClassName('mySlides');
+        index = 0;
+        slideshead[index].style.display="block";
+        setInterval(clicknext, 3000);
+        function clicknext(){
+        //ẩn slide hiện tại
+        slideshead[index].style.display='none';
+    
+            //hiện slide kế tiếp
+            index++;
+    
+            //xử lý slide cuối
+            if(index==slideshead.length){
+                index=0;
+            }
+    
+            slideshead[index].style.display='block';    
+        }
+        function clickprev(){
+        //ẩn slide hiện tại
+            slideshead[index].style.display='none';
+    
+            //hiện slide kế tiếp
+            index--;
+    
+            //xử lý slide cuối
+            if(index==-1){
+                index=slideshead.length-1;
+            }
+    
+            slideshead[index].style.display='block';  
+         
+        }
+
+
+        let arrival = document.getElementsByClassName('arrival-slides');
+        dem = 0;
+        arrival[dem].style.display="block";
+        setInterval(autoarrival, 2000);
+        function autoarrival(){
+        //ẩn slide hiện tại
+        arrival[dem].style.display='none';
+    
+            //hiện slide kế tiếp
+            dem++;
+    
+            //xử lý slide cuối
+            if(dem==arrival.length){
+                dem=0;
+            }
+    
+            arrival[dem].style.display='block';    
+        }
+
+        let cus = document.getElementsByClassName('cus-slides');
+        tang = 0;
+        cus[tang].style.display="block";
+        setInterval(autocus, 5000);
+        function autocus(){
+        //ẩn slide hiện tại
+        cus[tang].style.display='none';
+    
+            //hiện slide kế tiếp
+            tang++;
+    
+            //xử lý slide cuối
+            if(tang==cus.length){
+                tang=0;
+            }
+    
+            cus[tang].style.display='block';    
+        }
+        function autoprev(){
+        //ẩn slide hiện tại
+        cus[tang].style.display='none';
+    
+            //hiện slide kế tiếp
+            tang--;
+    
+            //xử lý slide cuối
+            if(tang==-1){
+                tang=cus.length-1;
+            }
+    
+            cus[tang].style.display='block';  
+         
+        }
+    </script>    
+    
+    <!-- /* click menu */ -->
+    <script>
+        function clickPage(){
+            let x = document.getElementById("nav-page");
+            let y = document.getElementById("nav-product");
+            if(x.className === "show")
+            {
+                x.className = "hide";
+            }else{
+                x.className = "show";
+                y.className = "hide";
+            }
+            
+        }
+   
+        function clickProduct(){
+            let x = document.getElementById("nav-product");
+            let y = document.getElementById("nav-page");
+            if(x.className === "show")
+            {
+                x.className = "hide";
+            }else{
+                x.className = "show";
+                y.className = "hide";
+            }
+        }
+
+        function clickMenu(){
+            let x = document.getElementById("menu-ul");
+            if(x.className === "show-menu")
+            {
+                x.className = "hide-menu";
+            }else{
+                x.className = "show-menu";
+            }
+        } 
+
+        
+    </script>
+
+    <!-- login -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('loginform');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single page</title>
+    <link rel="stylesheet" href="css/singlepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="header" id="home">
+        <div class="header-bar">
+              <div class="header-info">
+                  <p><i class="fa fa-volume-control-phone"></i> +(000)123 4565 32</p>
+                  <p><i class="fa fa-envelope"></i><a href="mailto:info@example1.com"> info@example1.com </a></p>
+              </div>
+              <div class="header-search">
+                  <h1><a href="index.html">Toys-Shop</a></h1>
+                  <form action="#" method="get" class="header-form">
+                      <input type="text" name="" id="header-input" placeholder="Search">
+                      <button class="btn-search">Search</button>
+                  </form>
+                  <div class="header-icon">
+                    <span><i class="fa fa-heart-o"></i></span>
+                    <span onclick="document.getElementById('loginform').style.display='block'"><i class="fa fa-user-o"></i></span>
+                    <span><i class="fa fa-cart-arrow-down"></i></span>
+                  </div>
+              </div>
+              <div  class="header-navbar">
+                  <label for="toggle" onclick="clickbar()"><i class="fa fa-bars"></i></label>
+                  <ul id="menu-ul" class="menu-an">           
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="">ABOUT</a></li>
+                      <li><a href="">SERVICE</a></li>
+                      <li><a href="shopnow.html"  id="active">SHOP NOW</a></li>
+                      <li><a  onclick="clickPage()">PAGE <i class="fa fa-caret-down"></i></a>
+                            <ul id="nav-page" class="nav-item">
+                                <li><a href="">404 PAGE</a></li>
+                                <li><a href="">TYPOGRAPHY</a></li>
+                            </ul>
+                      </li>
+                      <li><a  onclick="clickProduct()">PRODUCT <i class="fa fa-caret-down"></i></a>
+                        <ul id="nav-product" class="nav-item">
+                            <li><a href="">KIDS TOYS</a></li>
+                            <li><a href="">DOLLS</a></li>
+                            <li><a href="">KEYS TOYS</a></li>
+                            <li><a href="">BOYS TOYS</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="">CONTACT</a></li>
+                  </ul> 
+                           
+              </div>
+        </div>
+    </header>
+    <section class="title">
+        <ul>
+            <li><a href="index.html">Home</a><span> / / </span></li>
+            <li>Single Page</li>
+        </ul>
+    </section>
+
+    <section class="main">
+        <div class="main-row">
+            <div class="main-col-left">
+                <img id="myimage" class="slides fade" src="img/f1.jpg" style="width: 100%">
+                <img id="myimage" class="slides fade" src="img/f2.jpg" style="width: 100%">
+                <img id="myimage" class="slides fade" src="img/f3.jpg" style="width: 100%">
+                
+            
+                <div class="tabimage">
+                    <a><img src="img/f1.jpg" alt="" onclick="myFunction(1)" class="demo"></a>
+                    <a><img src="img/f2.jpg" alt="" onclick="myFunction(2)" class="demo"></a>
+                    <a><img src="img/f3.jpg" alt="" onclick="myFunction(3)" class="demo"></a>
+                </div> 
+            </div>
+
+            <div class="main-col-right">
+                <h1>Soft Teddy Bear(Brown)</h1>
+                <p>$650</p>
+                <del>$1,199</del>
+                
+                <span>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+                <div class="check">
+                    <h5>Check delivery, payment options and charges at your location</h5>
+                    <form action="#" method="get">
+                        <input type="text" name="" id="" placeholder="Please enter..." required>
+                        <button>CHECK</button>
+                    </form>
+                </div>
+                <div class="size">
+                    <h5>Size :</h5>
+                    <select name="" id="">
+                        <option value="">2 Feet</option>
+                        <option value="">3 Feet</option>
+                        <option value="">4 Feet</option>
+                        <option value="">5 Feet</option>
+                    </select>
+                </div>
+                <div class="type">
+                    <h5>Types :</h5>
+                    <span><input type="radio" name="radio" id="" checked> Soft Teddy Bear (Black)</span>
+                    <span><input type="radio" name="radio" id=""> Soft Teddy Bear (Brown)</span>
+                    <span><input type="radio" name="radio" id=""> Soft Teddy Bear (Pink)</span>
+                </div>
+                <button id="cart" class="clickBtn" onclick="document.getElementById('checkout').style.display='block'">Add To Cart</button>
+                <div class="share">
+                    <span>Share On :</span>
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-rss"></i></a>          
+                </div>
+            </div>
+        </div>
+        <div class="main-info">
+            <div class="tab">
+                <a class="tabclick active" onclick="clicktab(event, 'description')">DESCRIPTION</a>
+                <a class="tabclick" onclick="clicktab(event, 'review')">REVIEWS</a>
+                <a class="tabclick" onclick="clicktab(event, 'information')">INFORMATION</a>
+            </div>
+
+            <div id="description" class="tabcontent tabactive">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
+            </div>
+              
+              <div id="review" class="tabcontent">
+                <div class="review-row">
+                    <div class="review-left">
+                        <img src="img/team1.jpg" alt="">
+                    </div>
+                    <div class="review-right">
+                        <a href="#">ADMIN</a>
+                        <a href="#" id="reply">REPLY</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget.Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit.</p>
+                    </div>
+                </div>
+                <h4>ADD A REVIEW</h4>
+                <form action="#" method="get">
+                    <div class="input-row">
+                        <div class="input-col input-col-left"><input type="text" name="" id="" required></div>
+                        <div class="input-col"><input type="text" name="" id="" required></div>
+                    </div>
+                    <textarea name="" id="" cols="20" rows="10" required></textarea>
+                    <button>SEND</button>
+                </form>
+              </div>
+              
+              <div id="information" class="tabcontent">
+                <h3>Teddy Bear(Blue)</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elPellentesque vehicula augue eget nisl ullamcorper, molestie blandit ipsum auctor. Mauris volutpat augue dolor.Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab ore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. labore et dolore magna aliqua.</p>
+              </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="map">
+        <div class="map-row">
+            <div class="map-col">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d27803.752092988245!2d-94.61741380706275!3d39.09984952549091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x87c0f75eafe99997%3A0x558525e66aaa51a2!2zVGjDoG5oIHBo4buRIEthbnNhcywgTWlzc291cmksIEhvYSBL4buz!3m2!1d39.099726499999996!2d-94.5785667!5e0!3m2!1svi!2s!4v1604559245857!5m2!1svi!2s" width="100%" height="416.8px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="map-col map-info">
+                <div>
+                    <i class="fa fa-map-o"></i>
+                    <p>25478 Road St.121</p>
+                    <p>USA New Hill</p>
+                </div>
+                <div>
+                    <i class="fa fa-volume-control-phone"></i>
+                    <p>+(000)123 4565</p>
+                    <p>+(010)123 4565</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <p>info@example1.com</p>
+                    <p>info@example2.com</p>
+                </div>
+                
+            </div>
+        </div>      
+    </section>
+
+
+    <section class="getTouch">
+        <div class="get-container">
+            <h1>Get In Touch Us</h1>
+            <div class="get-row">
+                <div class="get-col">
+                    <a href=""><i class="fa fa-facebook-f"></i></a>
+                
+                    <a href=""> <i class="fa fa-envelope"></i></a>
+                
+                    <a href=""><i class="fa fa-rss"></i></a>
+                
+                    <a href=""><i class="fa fa-vk"></i></a>
+                </div>
+            </div>
+            <p>velit sagittis vehicula. Duis posuere ex in mollis iaculis. Suspendisse tincidunt velit sagittis vehicula. Duis posuere velit sagittis vehicula. Duis posuere</p>
+            <form action="#" method="get">
+                <input type="text" name="" id="getEmail" placeholder="Email">
+                <div><button class="subcribe">SUBSCRIBE</button></div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2018 Toys-Shop. All Rights Reserved | Design by <a href="#">W3Layouts</a></p>
+    </footer>
+
+    <div class="toTop">
+        <a href="#home" class="move"><img src="img/arr.png" alt=""></a>
+    </div>
+    <div id="loginform">
+        <div class="login">
+            <div class="login-head">
+                <h5>Login</h5>
+                <span onclick="document.getElementById('loginform').style.display='none'">x</span>
+            </div>
+            <div class="login-middle">
+                <form action="#" method="get">
+                    <input type="text" name="" id="" placeholder="Your Name" required>
+                    <input type="email" name="" id="" placeholder="Your Email" required>
+                    <input type="password" name="" id="" placeholder="Your Password" required>
+                    <button>LOGIN</button>
+                </form>
+            </div>
+            <div class="login-foot">
+                <button onclick="document.getElementById('loginform').style.display='none'">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout">
+        <form action="#" class="form-check">
+            <button onclick="document.getElementById('checkout').style.display='none'">x</button>
+            <ul id="myUL">  
+            </ul>
+            <a href="checkout.html">CHECK OUT</a>
+        </form>
+    </div>
+
+    <!-- Add -->
+    <script>
+        function addSinglepage(){
+        let click = document.getElementsByClassName("clickBtn")[0];
+        click.addEventListener("click", function(){
+        let list = document.createElement("li");
+    
+        let x = document.getElementsByClassName("main-col-right")[0];
+        
+        let h1 = x.children[0].innerHTML;
+        let valueh4 = document.createTextNode(h1);
+        
+        let p =  x.children[1].innerHTML;
+        
+        let valuea = document.createTextNode(p);
+
+        list.appendChild(valueh4);
+        list.appendChild(valuea);
+
+        let span = document.createElement("span");
+        let nodex = document.createTextNode("x");
+        span.appendChild(nodex);
+        span.classList.add("close");
+            
+        span.addEventListener("click",function(){
+            let list = span.parentNode;
+            list.remove();
+        });
+        list.appendChild(span);
+
+        document.getElementById("myUL").appendChild(list);
+    
+        });
+            }
+    addSinglepage();
+    </script>
+
+    <!-- click menu -->
+    <script>
+        function clickPage(){
+            let x = document.getElementById("nav-page");
+            let y = document.getElementById("nav-product");
+            if(x.className === "show")
+            {
+                x.className = "hide";
+            }else{
+                x.className = "show";
+                y.className = "hide";
+            }
+            
+        }
+    
+        function clickProduct(){
+            let x = document.getElementById("nav-product");
+            let y = document.getElementById("nav-page");
+            if(x.className === "show")
+            {
+                x.className = "hide";
+            }else{
+                x.className = "show";
+                y.className = "hide";
+            }
+        }
+
+        function clickbar(){
+            let x = document.getElementById("menu-ul");
+            if(x.className === "showbar")
+            {
+                x.className = "hidebar";
+            }else{
+                x.className = "showbar";
+            }
+        }   
+    </script>  
+    
+    <!-- tab -->
+    <script>
+        function clicktab(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tabclick");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <!-- slide -->
+    <script>
+        var slideIndex = 0;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function myFunction(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        
+        }
+    </script>
+
+    <!-- login -->
+    <script>
+            // Get the modal
+            var modal = document.getElementById('loginform');           
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+    </script>
+
+
+</body>
+</html>
